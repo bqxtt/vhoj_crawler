@@ -1,10 +1,10 @@
 package hdu
 
 import (
-	"github.com/vhoj_crawler/pkg/common/constant/hdu"
-	"github.com/vhoj_crawler/pkg/common/entity"
-	"github.com/vhoj_crawler/pkg/crawler"
-	"github.com/vhoj_crawler/pkg/utils/http_utils"
+	"github.com/bqxtt/vhoj_common/pkg/common/constants"
+	"github.com/bqxtt/vhoj_crawler/pkg/common/entity"
+	"github.com/bqxtt/vhoj_crawler/pkg/crawler"
+	"github.com/bqxtt/vhoj_crawler/pkg/utils/http_utils"
 	"strconv"
 )
 
@@ -26,11 +26,11 @@ func (H *HDUCrawler) Crawl(problemId string) (*entity.RawProblem, error) {
 }
 
 func (H *HDUCrawler) GetHost() string {
-	return hdu.HOST
+	return constants.HDUInfo.Host
 }
 
 func (H *HDUCrawler) GetProblemUrl(problemId string) string {
-	return hdu.HOST + hdu.PROBLEM_URL + problemId
+	return constants.HDUInfo.Host + constants.HDUInfo.ProblemUrl + problemId
 }
 
 func (H *HDUCrawler) PreValidate(problemId string) error {

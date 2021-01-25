@@ -1,6 +1,6 @@
 package crawler
 
-import "github.com/vhoj_crawler/pkg/common/entity"
+import "github.com/bqxtt/vhoj_common/pkg/common/entity"
 
 type ICrawler interface {
 	Crawl(problemId string) (*entity.RawProblem, error)

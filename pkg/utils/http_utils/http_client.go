@@ -1,7 +1,7 @@
 package http_utils
 
 import (
-	"github.com/vhoj_crawler/pkg/factory"
+	"github.com/bqxtt/vhoj_crawler/pkg/factory"
 	"io/ioutil"
 	"net/http"
 )

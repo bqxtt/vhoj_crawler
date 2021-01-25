@@ -1,10 +1,10 @@
 package poj
 
 import (
-	"github.com/vhoj_crawler/pkg/common/constant/poj"
-	"github.com/vhoj_crawler/pkg/common/entity"
-	"github.com/vhoj_crawler/pkg/crawler"
-	"github.com/vhoj_crawler/pkg/utils/http_utils"
+	"github.com/bqxtt/vhoj_crawler/pkg/common/constant/poj"
+	"github.com/bqxtt/vhoj_crawler/pkg/common/entity"
+	"github.com/bqxtt/vhoj_crawler/pkg/crawler"
+	"github.com/bqxtt/vhoj_crawler/pkg/utils/http_utils"
 	"log"
 	"strconv"
 )
