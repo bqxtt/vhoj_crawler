@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525df37c-16ac-498d-92cf-d59afc23936f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/common/constant/hdu/hdu.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/common/constant/poj/poj.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/common/entity/raw_problem.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/crawler/crawler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/crawler/poj/poj_crawler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/crawler/poj/poj_crawler_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/factory/http_client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/http_utils/http_client.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/http_utils/http_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$PROJECT_DIR$/../../../../../../Go/1.15.2" />
+  <component name="GOROOT" path="D:\Go\1.14.13" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -65,9 +53,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,7 +65,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -137,6 +127,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -146,22 +137,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="209" key="EditFileWatcherDialog/0.0.1536.864@0.0.1536.864" timestamp="1611458063091" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611479989387">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1611481713111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611479989387" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1611479989386">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611481713111" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1611481713111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611479989386" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1611479989386">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1611481713111" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1611481713109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611479989386" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1611479989386">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1611481713109" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1611481713111">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611479989386" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1611481713111" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611471962637">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -178,10 +169,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1611471962637" />
-    <state x="270" y="77" key="SettingsEditor" timestamp="1611458064875">
+    <state x="270" y="77" key="SettingsEditor" timestamp="1611550860220">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611458064875" />
+    <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611550860220" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -200,11 +191,6 @@
           <url>file://$PROJECT_DIR$/pkg/crawler/poj/poj_crawler_test.go</url>
           <line>7</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler.go</url>
-          <line>42</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

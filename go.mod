@@ -1,3 +1,3 @@
-module github.com/vhoj_crawler
+module github.com/bqxtt/vhoj_crawler
 
-go 1.15
+go 1.14
