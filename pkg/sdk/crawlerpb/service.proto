@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "github.com/ecnuvj/vhoj_crawler/pkg/sdk/crawlerpb";
+
+import "base/base.proto";
+
+service CrawlerService {
+    rpc CrawlProblem(CrawlProblemRequest) returns(CrawlProblemResponse) {};
+}
+
+message CrawlProblemRequest {
+    int32 remote_oj = 1;
+    string remote_problem_id = 2;
+}
+
+message CrawlProblemResponse {
+    base.BaseResponse base_response = 1;
+}

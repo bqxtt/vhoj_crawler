@@ -1,18 +1,19 @@
 package hdu
 
 import (
-	"github.com/bqxtt/vhoj_common/pkg/common/constants"
-	"github.com/bqxtt/vhoj_crawler/pkg/common/entity"
-	"github.com/bqxtt/vhoj_crawler/pkg/crawler"
-	"github.com/bqxtt/vhoj_crawler/pkg/utils/http_utils"
-	"strconv"
+	"github.com/ecnuvj/vhoj_common/pkg/common/constants/remote_oj"
+	"github.com/ecnuvj/vhoj_crawler/pkg/crawler"
+	"github.com/ecnuvj/vhoj_crawler/pkg/utils/http_utils"
+	"github.com/ecnuvj/vhoj_db/pkg/dao/model"
 )
+
+var HduCrawler = &HDUCrawler{}
 
 type HDUCrawler struct {
 	crawler.DefaultCrawlerImpl
 }
 
-func (H *HDUCrawler) Crawl(problemId string) (*entity.RawProblem, error) {
+func (H *HDUCrawler) Crawl(problemId string) (*model.RawProblem, error) {
 	err := H.PreValidate(problemId)
 	if err != nil {
 		return nil, err
@@ -26,19 +27,19 @@ func (H *HDUCrawler) Crawl(problemId string) (*entity.RawProblem, error) {
 }
 
 func (H *HDUCrawler) GetHost() string {
-	return constants.HDUInfo.Host
+	return remote_oj.HDUInfo.Host
 }
 
 func (H *HDUCrawler) GetProblemUrl(problemId string) string {
-	return constants.HDUInfo.Host + constants.HDUInfo.ProblemUrl + problemId
+	return remote_oj.HDUInfo.Host + remote_oj.HDUInfo.ProblemUrl + problemId
 }
 
 func (H *HDUCrawler) PreValidate(problemId string) error {
 	return nil
 }
 
-func (H *HDUCrawler) ParseProblemInfo(html string, problemId string) (*entity.RawProblem, error) {
-	rawProblem := &entity.RawProblem{}
+func (H *HDUCrawler) ParseProblemInfo(html string, problemId string) (*model.RawProblem, error) {
+	rawProblem := &model.RawProblem{}
 	var err error
 	rawProblem.Title, err = http_utils.ParseHtmlReg(`color:#1A5CC8'>([\s\S]*?)</h1>`, html)
 	if err != nil {
@@ -48,18 +49,14 @@ func (H *HDUCrawler) ParseProblemInfo(html string, problemId string) (*entity.Ra
 	if err != nil {
 		return nil, err
 	}
-	rawProblem.TimeLimit, err = strconv.ParseInt(timeLimit, 10, 64)
-	if err != nil {
-		return nil, err
-	}
+	rawProblem.TimeLimit = timeLimit
+
 	memoryLimit, err := http_utils.ParseHtmlReg(`/(\d*) K`, html)
 	if err != nil {
 		return nil, err
 	}
-	rawProblem.MemoryLimit, err = strconv.ParseInt(memoryLimit, 10, 64)
-	if err != nil {
-		return nil, err
-	}
+	rawProblem.MemoryLimit = memoryLimit
+
 	rawProblem.Description, err = http_utils.ParseHtmlReg(`>Problem Description</div>([\s\S]*?)<[^<>]*?panel_bottom[^<>]*?>`, html)
 	if err != nil {
 		return nil, err
@@ -84,5 +81,9 @@ func (H *HDUCrawler) ParseProblemInfo(html string, problemId string) (*entity.Ra
 	if err != nil {
 		return nil, err
 	}
+
+	rawProblem.RemoteOJ = remote_oj.HDU
+	rawProblem.RemoteProblemId = problemId
+
 	return rawProblem, nil
 }
