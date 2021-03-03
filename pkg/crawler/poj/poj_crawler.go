@@ -62,7 +62,7 @@ func (P *POJCrawler) ParseProblemInfo(html string, problemId string) (*model.Raw
 	if err != nil {
 		return nil, err
 	}
-	rawProblem.Input, err = http_utils.ParseHtmlReg(`<p class="pst">Input</p><[\s\S]*?>([\s\S]*?)<[\s\S]*?><p class="pst">`, html)
+	rawProblem.Input, err = http_utils.ParseHtmlReg(`<p class="pst">Input</p><[\s\S]*?>([\s\S]*?)</[\s\S]*?><p class="pst">`, html)
 	if err != nil {
 		return nil, err
 	}

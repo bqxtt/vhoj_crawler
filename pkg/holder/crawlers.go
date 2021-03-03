@@ -10,7 +10,7 @@ import (
 var Crawlers map[remote_oj.RemoteOJ]crawler.ICrawler
 
 func init() {
-	Crawlers := make(map[remote_oj.RemoteOJ]crawler.ICrawler, 0)
+	Crawlers = make(map[remote_oj.RemoteOJ]crawler.ICrawler, 0)
 	Crawlers[remote_oj.POJ] = poj.PojCrawler
 	Crawlers[remote_oj.HDU] = hdu.HduCrawler
 }

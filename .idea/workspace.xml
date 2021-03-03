@@ -11,29 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="525df37c-16ac-498d-92cf-d59afc23936f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/compile.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mysql.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/bootstrap/database/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/bootstrap/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/bootstrap/rpc_service/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/handler/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/holder/crawlers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/sdk/base/base.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/sdk/base/base.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/sdk/crawlerpb/service.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/sdk/crawlerpb/service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/sdk/crawlerpb/service_grpc.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/service/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/utils/reply_utils/reply.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/service/service_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/crawler/crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/crawler/crawler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/crawler/hdu/hdu_crawler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/bootstrap/database/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/bootstrap/database/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/crawler/poj/poj_crawler.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/crawler/poj/poj_crawler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/utils/http_utils/http_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/utils/http_utils/http_client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/holder/crawlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/holder/crawlers.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +59,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,14 +73,38 @@
       <recent name="D:\Users\14861\go\src\github.com\vhoj_crawler\pkg\utils\http_utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestHDUCrawler_Crawl in github.com/ecnuvj/vhoj_crawler/pkg/crawler/hdu">
-    <configuration name="go build github.com/vhoj_crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service (2)">
+    <configuration name="TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="vhoj_crawler" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/pkg/service" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="github.com/vhoj_crawler" />
+      <package value="github.com/ecnuvj/vhoj_crawler/pkg/service" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCrawlerService_CrawlProblem\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="vhoj_crawler" />
+      <working_directory value="$PROJECT_DIR$/pkg/service" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ecnuvj/vhoj_crawler/pkg/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCrawlerService_CrawlProblem\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="vhoj_crawler" />
+      <working_directory value="$PROJECT_DIR$/pkg/service" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/ecnuvj/vhoj_crawler/pkg/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestCrawlerService_CrawlProblem\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestHDUCrawler_Crawl in github.com/bqxtt/vhoj_crawler/pkg/crawler/hdu" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -123,35 +129,13 @@
       <pattern value="^\QTestHDUCrawler_Crawl\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestHDUCrawler_Crawl in github.com/vhoj_crawler/pkg/crawler/hdu" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="vhoj_crawler" />
-      <working_directory value="$PROJECT_DIR$/pkg/crawler/hdu" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/vhoj_crawler/pkg/crawler/hdu" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestHDUCrawler_Crawl\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestPOJCrawler_Crawl in github.com/vhoj_crawler/pkg/crawler/poj" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="vhoj_crawler" />
-      <working_directory value="$PROJECT_DIR$/pkg/crawler/poj" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/vhoj_crawler/pkg/crawler/poj" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestPOJCrawler_Crawl\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service (2)" />
+        <item itemvalue="Go Test.TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service (1)" />
+        <item itemvalue="Go Test.TestCrawlerService_CrawlProblem in github.com/ecnuvj/vhoj_crawler/pkg/service" />
         <item itemvalue="Go Test.TestHDUCrawler_Crawl in github.com/ecnuvj/vhoj_crawler/pkg/crawler/hdu" />
         <item itemvalue="Go Test.TestHDUCrawler_Crawl in github.com/bqxtt/vhoj_crawler/pkg/crawler/hdu" />
-        <item itemvalue="Go Test.TestPOJCrawler_Crawl in github.com/vhoj_crawler/pkg/crawler/poj" />
-        <item itemvalue="Go Test.TestHDUCrawler_Crawl in github.com/vhoj_crawler/pkg/crawler/hdu" />
-        <item itemvalue="Go Build.go build github.com/vhoj_crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -182,51 +166,59 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="209" key="EditFileWatcherDialog/0.0.1536.864@0.0.1536.864" timestamp="1611458063091" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1614142461000">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1614746429200">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746429200" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1614142461000" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1614142460999">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1614746429199">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.center/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746429199" />
     <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1614142460999" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1614142460998">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1614746429199">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.left/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746429199" />
     <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1614142460998" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1614142460999">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1614746429199">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.0.right/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746429199" />
     <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1614142460999" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1611471962637">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1614746379143">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746379143" />
     <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1611471962637" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1611471962637">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1614746379143">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.center/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746379143" />
     <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1611471962637" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1611471962637">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1614746379143">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.left/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746379143" />
     <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1611471962637" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1611471962637">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1614746379143">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.right/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746379143" />
     <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1611471962637" />
-    <state x="270" y="77" key="SettingsEditor" timestamp="1611552088249">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="338" y="96" key="SettingsEditor" timestamp="1614744325684">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="338" y="96" key="SettingsEditor/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614744325684" />
     <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1611552088249" />
+    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1614746329342">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="968" height="548" key="XDebugger.FullValuePopup/-1050.-292.1050.1680/0.0.1920.1080@0.0.1920.1080" timestamp="1614746329342" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/pkg/crawler/poj/poj_crawler.go</url>
-          <line>99</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/pkg/crawler/poj/poj_crawler_test.go</url>
           <line>9</line>
@@ -236,6 +228,11 @@
           <url>file://$PROJECT_DIR$/pkg/crawler/poj/poj_crawler_test.go</url>
           <line>7</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pkg/crawler/poj/poj_crawler.go</url>
+          <line>88</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
