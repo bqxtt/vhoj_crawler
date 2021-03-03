@@ -5,6 +5,7 @@ import (
 	"github.com/ecnuvj/vhoj_crawler/pkg/crawler"
 	"github.com/ecnuvj/vhoj_crawler/pkg/utils/http_utils"
 	"github.com/ecnuvj/vhoj_db/pkg/dao/model"
+	"log"
 )
 
 var HduCrawler = &HDUCrawler{}
@@ -18,7 +19,7 @@ func (H *HDUCrawler) Crawl(problemId string) (*model.RawProblem, error) {
 	if err != nil {
 		return nil, err
 	}
-	rawContent, err := http_utils.Download("GET", H.GetProblemUrl(problemId))
+	rawContent, err := http_utils.Download("GET", H.GetProblemUrl(problemId), "gbk")
 	if err != nil {
 		return nil, err
 	}
@@ -79,7 +80,8 @@ func (H *HDUCrawler) ParseProblemInfo(html string, problemId string) (*model.Raw
 	}
 	rawProblem.Source, err = http_utils.ParseHtmlReg(`>Author</div>([\s\S]*?)<[^<>]*?panel_bottom[^<>]*?>`, html)
 	if err != nil {
-		return nil, err
+		log.Print("author no match")
+		rawProblem.Source, _ = http_utils.ParseHtmlReg(`>Source</div>([\s\S]*?)<[^<>]*?panel_bottom[^<>]*?>`, html)
 	}
 
 	rawProblem.RemoteOJ = remote_oj.HDU

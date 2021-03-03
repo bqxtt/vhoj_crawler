@@ -19,7 +19,7 @@ func (P *POJCrawler) Crawl(problemId string) (*model.RawProblem, error) {
 	if err != nil {
 		return nil, err
 	}
-	rawContent, err := http_utils.Download("GET", P.GetProblemUrl(problemId))
+	rawContent, err := http_utils.Download("GET", P.GetProblemUrl(problemId), "utf8")
 	if err != nil {
 		return nil, err
 	}

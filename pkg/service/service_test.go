@@ -10,7 +10,7 @@ import (
 func TestCrawlerService_CrawlProblem(t *testing.T) {
 	database.Init()
 	service := &CrawlerService{}
-	err := service.CrawlProblem(remote_oj.POJ, "1000")
+	err := service.CrawlProblem(remote_oj.HDU, "1050")
 	if err != nil {
 		fmt.Printf("err: %v", err)
 		return
